@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.nikolas.gallery.photoview"
+    id="com.nikolas.gallery"
     version="1.0.0">
 <engines>
     <engine name="cordova" version="3.5.0" />
