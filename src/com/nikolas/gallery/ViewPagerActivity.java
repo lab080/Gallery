@@ -13,13 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 
-import uk.co.senab.photoview.PhotoView;
+import com.nikolas.gallery.PhotoView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;

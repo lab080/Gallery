@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="uk.co.senab.photoview"
+    id="com.nikolas.gallery.photoview"
     version="1.0.0">
 <engines>
     <engine name="cordova" version="3.5.0" />
@@ -33,14 +33,14 @@
 	limitations under the License.
 </license>
 
-<dependency id="uk.co.senab.photoview" subdir="src/uk/co/senab/photoview" />
-<dependency id="uk.co.senab.photoview.gestures" subdir="src/uk/co/senab/photoview/gestures" />
-<dependency id="uk.co.senab.photoview.log" subdir="src/uk/co/senab/photoview/log" />
-<dependency id="uk.co.senab.photoview.scrollerproxy" subdir="src/uk/co/senab/photoview/scrollerproxy" />
+<dependency id="com.nikolas.gallery" subdir="src/com/nikolas/gallery" />
+<dependency id="com.nikolas.gallery.gestures" subdir="src/com/nikolas/gallery/gestures" />
+<dependency id="com.nikolas.gallery.log" subdir="src/com/nikolas/gallery/log" />
+<dependency id="com.nikolas.gallery.scrollerproxy" subdir="src/com/nikolas/gallery/scrollerproxy" />
 <dependency id="org.apache.cordova" subdir="src/org/apache/cordova" />
 
-<source-file src="src/uk/co/senab/photoview/ViewPagerActivity.java" target-dir="src/uk/co/senab/photoview/ViewPagerActivity" />
-<source-file src="src/uk/co/senab/photoview/gallery.java" target-dir="src/uk/co/senab/photoview/gallery" />
+<source-file src="src/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery/ViewPagerActivity" />
+<source-file src="src/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery/gallery" />
 
 <config-file target="AndroidManifest.xml" parent="/manifest/application">
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

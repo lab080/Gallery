@@ -13,7 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
+
+import com.nikolas.gallery.PhotoViewAttacher.OnMatrixChangedListener;
+import com.nikolas.gallery.PhotoViewAttacher.OnPhotoTapListener;
+import com.nikolas.gallery.PhotoViewAttacher.OnViewTapListener;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -24,10 +28,6 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.widget.ImageView;
-
-import uk.co.senab.photoview.PhotoViewAttacher.OnMatrixChangedListener;
-import uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener;
-import uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener;
 
 public class PhotoView extends ImageView implements IPhotoView {
 

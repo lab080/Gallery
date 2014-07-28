@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -36,10 +36,10 @@ import android.widget.ImageView.ScaleType;
 
 import java.lang.ref.WeakReference;
 
-import uk.co.senab.photoview.gestures.OnGestureListener;
-import uk.co.senab.photoview.gestures.VersionedGestureDetector;
-import uk.co.senab.photoview.log.LogManager;
-import uk.co.senab.photoview.scrollerproxy.ScrollerProxy;
+import com.nikolas.gallery.gestures.OnGestureListener;
+import com.nikolas.gallery.gestures.VersionedGestureDetector;
+import com.nikolas.gallery.log.LogManager;
+import com.nikolas.gallery.scrollerproxy.ScrollerProxy;
 
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
@@ -124,7 +124,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
 
     // Gesture Detectors
     private GestureDetector mGestureDetector;
-    private uk.co.senab.photoview.gestures.GestureDetector mScaleDragDetector;
+    private com.nikolas.gallery.gestures.GestureDetector mScaleDragDetector;
 
     // These are set so we don't keep allocating them on the heap
     private final Matrix mBaseMatrix = new Matrix();
@@ -201,7 +201,7 @@ public class PhotoViewAttacher implements IPhotoView, View.OnTouchListener,
      * Clean-up the resources attached to this object. This needs to be called when the ImageView is
      * no longer used. A good example is from {@link android.view.View#onDetachedFromWindow()} or
      * from {@link android.app.Activity#onDestroy()}. This is automatically called if you are using
-     * {@link uk.co.senab.photoview.PhotoView}.
+     * {@link com.nikolas.gallery.PhotoView}.
      */
     @SuppressWarnings("deprecation")
     public void cleanup() {

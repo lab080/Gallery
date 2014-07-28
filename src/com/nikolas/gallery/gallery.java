@@ -1,4 +1,4 @@
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import uk.co.senab.photoview.ViewPagerActivity.SamplePagerAdapter;
+import com.nikolas.gallery.ViewPagerActivity.SamplePagerAdapter;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

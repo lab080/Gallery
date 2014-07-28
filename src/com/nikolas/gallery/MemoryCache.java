@@ -1,4 +1,4 @@
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import java.lang.ref.SoftReference;
 import java.util.Collections;

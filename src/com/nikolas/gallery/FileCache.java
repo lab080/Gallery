@@ -1,4 +1,4 @@
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import java.io.File;
 import android.content.Context;

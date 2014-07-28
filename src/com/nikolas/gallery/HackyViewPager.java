@@ -1,4 +1,4 @@
-package uk.co.senab.photoview;
+package com.nikolas.gallery;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
