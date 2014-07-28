@@ -33,14 +33,14 @@
 	limitations under the License.
 </license>
 
-<dependency id="uk.co.senab.photoview" subdir="gen/uk/co/senab/photoview" />
-<dependency id="uk.co.senab.photoview.gestures" subdir="gen/uk/co/senab/photoview/gestures" />
-<dependency id="uk.co.senab.photoview.log" subdir="gen/uk/co/senab/photoview/log" />
-<dependency id="uk.co.senab.photoview.scrollerproxy" subdir="gen/uk/co/senab/photoview/scrollerproxy" />
+<dependency id="uk.co.senab.photoview" subdir="src/uk/co/senab/photoview" />
+<dependency id="uk.co.senab.photoview.gestures" subdir="src/uk/co/senab/photoview/gestures" />
+<dependency id="uk.co.senab.photoview.log" subdir="src/uk/co/senab/photoview/log" />
+<dependency id="uk.co.senab.photoview.scrollerproxy" subdir="src/uk/co/senab/photoview/scrollerproxy" />
 <dependency id="org.apache.cordova" subdir="src/org/apache/cordova" />
 
-<source-file src="gen/uk/co/senab/photoview/ViewPagerActivity.java" target-dir="gen/uk/co/senab/photoview/ViewPagerActivity" />
-<source-file src="gen/uk/co/senab/photoview/gallery.java" target-dir="gen/uk/co/senab/photoview/gallery" />
+<source-file src="src/uk/co/senab/photoview/ViewPagerActivity.java" target-dir="src/uk/co/senab/photoview/ViewPagerActivity" />
+<source-file src="src/uk/co/senab/photoview/gallery.java" target-dir="src/uk/co/senab/photoview/gallery" />
 
 <config-file target="AndroidManifest.xml" parent="/manifest/application">
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
