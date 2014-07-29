@@ -3,9 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.nikolas.gallery"
     version="1.0.0">
-<engines>
-    <engine name="cordova" version="3.5.0" />
-</engines>
 <name>Gallery</name>
 <description>
 	Visualizzazione gallery di immagini tramite URL.
@@ -17,33 +14,35 @@
 	Copyright 2011, 2012 Chris Banes
 </author>
 <keywords>gallery, gallery url,image url,plugin gallery</keywords>
-<license>
-	Copyright 2011, 2012 Chris Banes
+<license>MIT</license>
 
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
+<engines>
+		<engine name="cordova" version=">=3.0.0"/>
+</engines>
 
-	   http://www.apache.org/licenses/LICENSE-2.0
+<js-module src="www/Gallery.js" name="Gallery">
+		<clobbers target="window.plugins.gallery" />
+</js-module>
 
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
-</license>
-
-<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery/ViewPagerActivity" />
-<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery/gallery" />
-
-<config-file target="AndroidManifest.xml" parent="/manifest/application">
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <activity android:name=".gallery">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</config-file>
+<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Gallery">
+				<param name="android-package" value="com.nikolas.gallery" />
+			</feature>
+		</config-file>
+		
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+				<uses-permission android:name="android.permission.INTERNET" />
+				<activity android:name=".gallery">
+						<intent-filter>
+								<action android:name="android.intent.action.MAIN" />
+								<category android:name="android.intent.category.LAUNCHER" />
+						</intent-filter>
+				</activity>
+		</config-file>
+		
+		<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery/ViewPagerActivity" />
+		<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery/gallery" />
+</platform>
 </plugin>
