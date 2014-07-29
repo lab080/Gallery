@@ -33,7 +33,6 @@
 	limitations under the License.
 </license>
 
-<dependency id="com.nikolas.gallery" subdir="src/com/nikolas/gallery" />
 <dependency id="com.nikolas.gallery.gestures" subdir="src/com/nikolas/gallery/gestures" />
 <dependency id="com.nikolas.gallery.log" subdir="src/com/nikolas/gallery/log" />
 <dependency id="com.nikolas.gallery.scrollerproxy" subdir="src/com/nikolas/gallery/scrollerproxy" />
