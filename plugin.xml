@@ -33,8 +33,8 @@
 	limitations under the License.
 </license>
 
-<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/android/com/nikolas/gallery/ViewPagerActivity" />
-<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/android/com/nikolas/gallery/gallery" />
+<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery/ViewPagerActivity" />
+<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery/gallery" />
 
 <config-file target="AndroidManifest.xml" parent="/manifest/application">
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
