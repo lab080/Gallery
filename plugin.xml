@@ -73,6 +73,8 @@
 		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/PreGingerScroller.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
 		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/ScrollerProxy.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
 		
+		<source-file src="libs/android-support-v4.jar" target-dir="libs" />
+		
 		<source-file src="src/android/Library/res/layout/activity_view_pager.xml" target-dir="res/layout"/>
 		<source-file src="src/android/Library/res/menu/viewpager_menu.xml" target-dir="res/menu"/>
 		<source-file src="src/android/Library/res/values/strings.xml" target-dir="res/values"/>
