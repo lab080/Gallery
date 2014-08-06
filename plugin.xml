@@ -48,5 +48,6 @@
 		
 		<source-file src="src/android/Library/res/layout/activity_view_pager.xml" target-dir="res/layout"/>
 		<source-file src="src/android/Library/res/menu/viewpager_menu.xml" target-dir="res/layout"/>
+		<source-file src="src/android/Library/res/values/strings.xml" target-dir="res/layout"/>
 </platform>
 </plugin>
