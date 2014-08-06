@@ -42,9 +42,36 @@
 				</activity>
 		</config-file>
 		
-		<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery/ViewPagerActivity" />
-		<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery/gallery" />
-
+		<source-file src="src/android/com/nikolas/gallery/BuildConfig.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/Compat.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/DefaultOnDoubleTapListener.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/FileCache.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/gallery.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/HackyViewPager.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/ImageLoader.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/IPhotoView.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/MemoryCache.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/PhotoView.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/PhotoViewAttacher.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/R.java" target-dir="src/com/nikolas/gallery" />
+		<source-file src="src/android/com/nikolas/gallery/Utils.java" target-dir="src/com/nikolas/gallery" />	
+		<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery" />
+		
+		<source-file src="src/android/com/nikolas/gallery/gestures/CupcakeGestureDetector.java" target-dir="src/com/nikolas/gallery/gestures" />
+		<source-file src="src/android/com/nikolas/gallery/gestures/EclairGestureDetector.java" target-dir="src/com/nikolas/gallery/gestures" />
+		<source-file src="src/android/com/nikolas/gallery/gestures/FroyoGestureDetector.java" target-dir="src/com/nikolas/gallery/gestures" />
+		<source-file src="src/android/com/nikolas/gallery/gestures/GestureDetector.java" target-dir="src/com/nikolas/gallery/gestures" />
+		<source-file src="src/android/com/nikolas/gallery/gestures/OnGestureListener.java" target-dir="src/com/nikolas/gallery/gestures" />
+		<source-file src="src/android/com/nikolas/gallery/gestures/VersionedGestureDetector.java" target-dir="src/com/nikolas/gallery/gestures" />
+		
+		<source-file src="src/android/com/nikolas/gallery/log/Logger.java" target-dir="src/com/nikolas/gallery/log" />
+		<source-file src="src/android/com/nikolas/gallery/log/LoggerDefault.java" target-dir="src/com/nikolas/gallery/log" />
+		<source-file src="src/android/com/nikolas/gallery/log/LogManager.java" target-dir="src/com/nikolas/gallery/log" />
+		
+		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/GingerScroller.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
+		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/IcsScroller.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
+		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/PreGingerScroller.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
+		<source-file src="src/android/com/nikolas/gallery/scrollerproxy/ScrollerProxy.java" target-dir="src/com/nikolas/gallery/scrollerproxy" />
 		
 		<source-file src="src/android/Library/res/layout/activity_view_pager.xml" target-dir="res/layout"/>
 		<source-file src="src/android/Library/res/menu/viewpager_menu.xml" target-dir="res/menu"/>
