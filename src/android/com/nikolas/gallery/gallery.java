@@ -35,17 +35,17 @@ public class gallery extends CordovaPlugin {
     }
 
     private void echo(String message, CallbackContext callbackContext) {
-        //if (message != null && message.length() > 0) {   
-        	//ArrayList<String> array = null;
+        if (message != null && message.length() > 0) {   
+        	ArrayList<String> array = null;
         	//Aggiungere i parametri da passare
-        	//array.add(new String("http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg"));
-        	callbackContext.error("Expected one non-empty string argument.");
-        	//Intent i = new Intent(context, ViewPagerActivity.class);
-        	//i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        	//i.putStringArrayListExtra("json_array", array);
-        	//context.startActivity(i);
-        //} else {
-         //   callbackContext.error("Expected one non-empty string argument.");
-        //}
+        	array.add(new String("http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg"));
+        	
+        	Intent i = new Intent(context, ViewPagerActivity.class);
+        	i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        	i.putStringArrayListExtra("json_array", array);
+        	context.startActivity(i);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
     }
 }
