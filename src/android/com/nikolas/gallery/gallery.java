@@ -21,7 +21,7 @@ import android.util.Log;
  * This class echoes a string called from JavaScript.
  */
 public class gallery extends CordovaPlugin {
-	Context context;
+	Context context = this.cordova.getActivity().getApplicationContext();
 	
 	@Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -40,7 +40,7 @@ public class gallery extends CordovaPlugin {
         	//Aggiungere i parametri da passare
         	//array.add(new String("http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg"));
         	
-        	Intent i = new Intent(this, ViewPagerActivity.class);
+        	Intent i = new Intent(context, ViewPagerActivity.class);
         	i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         	i.putStringArrayListExtra("json_array", array);
         	context.startActivity(i);
