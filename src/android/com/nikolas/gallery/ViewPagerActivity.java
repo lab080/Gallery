@@ -93,7 +93,7 @@ public class ViewPagerActivity extends Activity {
 			//Drawable drawable = creaImmagineDaUrl(URL[position]);
 			//photoView.setImageDrawable(drawable);
 
-			photoView.setImageView(creaImmagineDaUrl(URL[position]));
+			photoView.setImageResource(creaImmagineDaUrl(URL[position]));
 
 			// Now just add PhotoView to ViewPager and return it
 			container.addView(photoView, LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
@@ -181,7 +181,7 @@ public class ViewPagerActivity extends Activity {
      }
     
     //Scaricamento immagini
-    	private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
+    	private class DownloadFilesTask extends AsyncTask {
 	  protected Long doInBackground(URL urls) {
 	   int count = urls.length;
 	   long totalSize = 0;
