@@ -79,7 +79,7 @@
 		<source-file src="libs/android-support-v4.jar" target-dir="libs" />
 		
 		<source-file src="src/android/Library/res/layout/activity_view_pager.xml" target-dir="res/layout"/>
-		<source-file src="src/android/Library/res/drawable/ic_launcher.png" target-dir="res/layout/drawable"/>
+		<source-file src="src/android/Library/res/drawable/ic_launcher.png" target-dir="res/drawable"/>
 		<source-file src="src/android/Library/res/menu/viewpager_menu.xml" target-dir="res/menu"/>
 		<source-file src="src/android/Library/res/values/string.xml" target-dir="res/values"/>
 </platform>
