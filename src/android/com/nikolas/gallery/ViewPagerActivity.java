@@ -167,8 +167,9 @@ public class ViewPagerActivity extends Activity {
     {
          try
          {
-             InputStream is = (InputStream) new URL(url).getContent();
-             Drawable d = Drawable.createFromStream(is, null);
+             //InputStream is = (InputStream) new URL(url).getContent();
+             
+             Drawable d = new DownloadFilesTask().execute(url);//Drawable.createFromStream(is, null);
              Log.i("ViewPagerActivity", "L'immagine è caricata : "+d);
              return d;
          }catch (Exception e) {
@@ -178,4 +179,26 @@ public class ViewPagerActivity extends Activity {
          }
      }
     
+    //Scaricamento immagini
+    	private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
+	  protected Long doInBackground(URL urls) {
+	   int count = urls.length;
+	   long totalSize = 0;
+	  for (int i = 0; i < count; i++) {
+	      totalSize += Downloader.downloadFile(urls[i]);
+	       publishProgress((int) ((i / (float) count) * 100));
+	      // Escape early if cancel() is called
+        	     if (isCancelled()) break;
+	   }
+	   return totalSize;
+	  }
+
+	 protected void onProgressUpdate(Integer progress) {
+	     setProgressPercent(progress[0]);
+	 }
+
+	 protected void onPostExecute(Long result) {
+	     showDialog("Downloaded " + result + " bytes");
+	  }
+ }
 }
