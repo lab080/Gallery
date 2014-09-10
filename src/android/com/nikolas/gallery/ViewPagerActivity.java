@@ -75,8 +75,7 @@ public class ViewPagerActivity extends Activity {
 			URL[0] = "http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg";
 			URL[1] = "http://www.techfest.org/Img/android.jpg";
 			URL[2] = "http://wp-up.s3.amazonaws.com/aw/2014/01/AndroidWallpaper.jpg";
-			
-			Log.i("ViewPagerActivity", "URL caricati");
+
 			//Intent intent = null;
 			//ArrayList<String> json_data = (ArrayList<String>) intent.getSerializableExtra("String");
 			//URL = json_data.toArray(new String[json_data.size()]);
@@ -89,11 +88,9 @@ public class ViewPagerActivity extends Activity {
 			PhotoView photoView = new PhotoView(container.getContext());
 			
 			//photoView.setImageResource(sDrawables[position]);
-			Log.i("ViewPagerActivity", "Sta caricando l'immagine");
+			Log.i("ViewPagerActivity", "Sta caricando l'immagine : "+URL[position]);
 			
 			Drawable drawable = creaImmagineDaUrl(URL[position]);
-			
-			Log.i("ViewPagerActivity", "L'immagine è caricata");
 			
 			photoView.setImageDrawable(drawable);
 
@@ -172,9 +169,11 @@ public class ViewPagerActivity extends Activity {
          {
              InputStream is = (InputStream) new URL(url).getContent();
              Drawable d = Drawable.createFromStream(is, null);
+             Log.i("ViewPagerActivity", "L'immagine è caricata : "+d);
              return d;
          }catch (Exception e) {
              System.out.println("Exc="+e);
+             Log.i("ViewPagerActivity", "L'immagine NON e stata caricata : "+e);
              return null;
          }
      }
