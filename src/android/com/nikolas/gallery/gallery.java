@@ -24,6 +24,7 @@ public class gallery extends CordovaPlugin {
 	
 	@Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        Log.i("gallery", "action" + action);
         if (action.equals("echo")) {
             String message = args.getString(0); 
             this.echo(message, callbackContext);
