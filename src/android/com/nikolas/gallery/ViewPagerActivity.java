@@ -72,8 +72,8 @@ public class ViewPagerActivity extends Activity {
 		public int getCount() {
 			//Preparazione array 
 			URL[0] = "http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg";
-			//URL[1] = "http://www.techfest.org/Img/android.jpg";
-			//URL[2] = "http://wp-up.s3.amazonaws.com/aw/2014/01/AndroidWallpaper.jpg";
+			URL[1] = "http://www.techfest.org/Img/android.jpg";
+			URL[2] = "http://wp-up.s3.amazonaws.com/aw/2014/01/AndroidWallpaper.jpg";
 			//Intent intent = null;
 			//ArrayList<String> json_data = (ArrayList<String>) intent.getSerializableExtra("String");
 			//URL = json_data.toArray(new String[json_data.size()]);
