@@ -90,9 +90,11 @@ public class ViewPagerActivity extends Activity {
 			//photoView.setImageResource(sDrawables[position]);
 			Log.i("ViewPagerActivity", "Sta caricando l'immagine : "+URL[position]);
 			
-			Drawable drawable = creaImmagineDaUrl(URL[position]);
+			//Drawable drawable = creaImmagineDaUrl(URL[position]);
+			//photoView.setImageDrawable(drawable);
 			
-			photoView.setImageDrawable(drawable);
+			ImageView drawable = setImageResource( creaImmagineDaUrl(URL[position]) );
+			photoView.setImageView(drawable);
 
 			// Now just add PhotoView to ViewPager and return it
 			container.addView(photoView, LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
@@ -169,7 +171,7 @@ public class ViewPagerActivity extends Activity {
          {
              //InputStream is = (InputStream) new URL(url).getContent();
              
-             Drawable d = new DownloadFilesTask().execute(url);//Drawable.createFromStream(is, null);
+             Long d = new DownloadFilesTask().execute(url);//Drawable d = Drawable.createFromStream(is, null);
              Log.i("ViewPagerActivity", "L'immagine è caricata : "+d);
              return d;
          }catch (Exception e) {
