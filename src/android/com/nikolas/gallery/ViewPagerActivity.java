@@ -35,6 +35,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.util.Log;
+import android.os.AsyncTask;
 
 /**
  * Lock/Unlock button is added to the ActionBar.
