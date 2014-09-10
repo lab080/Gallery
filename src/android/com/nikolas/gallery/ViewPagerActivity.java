@@ -34,6 +34,7 @@ import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.util.Log;
 
 /**
  * Lock/Unlock button is added to the ActionBar.
@@ -74,6 +75,8 @@ public class ViewPagerActivity extends Activity {
 			URL[0] = "http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg";
 			URL[1] = "http://www.techfest.org/Img/android.jpg";
 			URL[2] = "http://wp-up.s3.amazonaws.com/aw/2014/01/AndroidWallpaper.jpg";
+			
+			Log.i("ViewPagerActivity", "URL caricati");
 			//Intent intent = null;
 			//ArrayList<String> json_data = (ArrayList<String>) intent.getSerializableExtra("String");
 			//URL = json_data.toArray(new String[json_data.size()]);
@@ -86,7 +89,12 @@ public class ViewPagerActivity extends Activity {
 			PhotoView photoView = new PhotoView(container.getContext());
 			
 			//photoView.setImageResource(sDrawables[position]);
+			Log.i("ViewPagerActivity", "Sta caricando l'immagine");
+			
 			Drawable drawable = creaImmagineDaUrl(URL[position]);
+			
+			Log.i("ViewPagerActivity", "L'immagine è caricata");
+			
 			photoView.setImageDrawable(drawable);
 
 			// Now just add PhotoView to ViewPager and return it
