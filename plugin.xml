@@ -32,8 +32,6 @@
 		</config-file>
 		
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-				<uses-permission android:name="android.permission.INTERNET" />
 				<activity android:name="com.nikolas.gallery.gallery">
 					<intent-filter>
 							<action android:name="android.intent.action.MAIN" />
@@ -41,6 +39,11 @@
 					</intent-filter>
 				</activity>
 				<activity android:name="com.nikolas.gallery.ViewPagerActivity" android:exported="true"/>
+		</config-file>
+		
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.INTERNET" />
 		</config-file>
 		
 		<source-file src="src/android/com/nikolas/gallery/BuildConfig.java" target-dir="src/com/nikolas/gallery" />
