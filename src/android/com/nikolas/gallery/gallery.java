@@ -38,7 +38,7 @@ public class gallery extends CordovaPlugin {
         if (message != null && message.length() > 0) {   
         	ArrayList<String> array = null;
         	//Aggiungere i parametri da passare
-        	array.add(new String("http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg"));
+        	//array.add(new String("http://www.androidblog.it/wp-content/uploads/2014/06/Android1.jpg"));
         	
         	Intent i = new Intent(context, ViewPagerActivity.class);
         	i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
