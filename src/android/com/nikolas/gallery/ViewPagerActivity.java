@@ -165,10 +165,6 @@ public class ViewPagerActivity extends Activity {
 	
 	static Drawable creaImmagineDaUrl(String url)
     {
-         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-
-	 StrictMode.setThreadPolicy(policy); 
-	 
          try
          {
              InputStream is = (InputStream) new URL(url).getContent();
