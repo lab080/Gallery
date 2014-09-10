@@ -92,9 +92,8 @@ public class ViewPagerActivity extends Activity {
 			
 			//Drawable drawable = creaImmagineDaUrl(URL[position]);
 			//photoView.setImageDrawable(drawable);
-			
-			ImageView drawable = setImageResource( creaImmagineDaUrl(URL[position]) );
-			photoView.setImageView(drawable);
+
+			photoView.setImageView(creaImmagineDaUrl(URL[position]));
 
 			// Now just add PhotoView to ViewPager and return it
 			container.addView(photoView, LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
