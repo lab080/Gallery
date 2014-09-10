@@ -21,7 +21,7 @@ import android.util.Log;
  * This class echoes a string called from JavaScript.
  */
 public class gallery extends CordovaPlugin {
-	Context context = this.cordova.getActivity().getApplicationContext();
+	Context context = cordova.getActivity().getApplicationContext();
 	
 	@Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
