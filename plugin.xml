@@ -57,7 +57,6 @@
 		<source-file src="src/android/com/nikolas/gallery/MemoryCache.java" target-dir="src/com/nikolas/gallery" />
 		<source-file src="src/android/com/nikolas/gallery/PhotoView.java" target-dir="src/com/nikolas/gallery" />
 		<source-file src="src/android/com/nikolas/gallery/PhotoViewAttacher.java" target-dir="src/com/nikolas/gallery" />
-		<source-file src="src/android/com/nikolas/gallery/R.java" target-dir="src/com/nikolas/gallery" />
 		<source-file src="src/android/com/nikolas/gallery/Utils.java" target-dir="src/com/nikolas/gallery" />	
 		<source-file src="src/android/com/nikolas/gallery/ViewPagerActivity.java" target-dir="src/com/nikolas/gallery" />
 		
