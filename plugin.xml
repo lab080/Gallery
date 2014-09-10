@@ -40,6 +40,7 @@
 								<category android:name="android.intent.category.LAUNCHER" />
 						</intent-filter>
 				</activity>
+				<activity android:name=".ViewPagerActivity"></activity>
 		</config-file>
 		
 		<source-file src="src/android/com/nikolas/gallery/BuildConfig.java" target-dir="src/com/nikolas/gallery" />
