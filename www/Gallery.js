@@ -1,8 +1,30 @@
-// Returns a jQuery or AngularJS deferred object, or pass a success and fail callbacks if you don't want to use jQuery or AngularJS
-var imageGallery = function (success, fail) {
-  // 5th param is NOT optional. must be at least empty array
-  cordova.exec(success, fail, "gallery", "echo", []);
-  return dfr;
+var ImageGallery = function() {
 };
 
-module.exports = imageGallery;
+// Call this to register for push notifications. Content of [options] depends on whether we are working with APNS (iOS) or GCM (Android)
+ImageGallery.prototype.echo = function(successCallback, errorCallback, options) {
+    if (errorCallback == null) { errorCallback = function() {}}
+
+    if (typeof errorCallback != "function")  {
+        console.log("imageGallery.echo failure: failure parameter not a function");
+        return
+    }
+
+    if (typeof successCallback != "function") {
+        console.log("imageGallery.echo failure: success callback parameter must be a function");
+        return
+    }
+
+    cordova.exec(successCallback, errorCallback, "Gallery", "echo", []);
+};
+
+if(!window.plugins) {
+    window.plugins = {};
+}
+if (!window.plugins.imageGallery) {
+    window.plugins.imageGallery = new ImageGallery();
+}
+
+if (typeof module != 'undefined' && module.exports) {
+  module.exports = ImageGallery;
+}
