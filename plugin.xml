@@ -35,10 +35,10 @@
 			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 				<uses-permission android:name="android.permission.INTERNET" />
 				<activity android:name="com.nikolas.gallery.gallery">
-						<intent-filter>
-								<action android:name="android.intent.action.MAIN" />
-								<category android:name="android.intent.category.LAUNCHER" />
-						</intent-filter>
+					<intent-filter>
+							<action android:name="android.intent.action.MAIN" />
+							<category android:name="android.intent.category.LAUNCHER" />
+					</intent-filter>
 				</activity>
 				<activity android:name="com.nikolas.gallery.ViewPagerActivity" android:exported="true"/>
 		</config-file>
